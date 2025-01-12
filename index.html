@@ -3,60 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Stephen David">
+    <meta name="description" content="BYU Dynamic Web Fundamentals by Stephen David, containing a bio and project development ">
+    <link rel="stylesheet" href="/styles/base.css">
+    <title>WDD 131 - Dynamic Web Fundamentals - Stephen David</title>
 </head>
 <body>
-    <header>
-        <h1>WDD 131: Dynamic Web Fundamentals - <span>Stephen David</span></h1>
+    <div class="header">
+        <div class="title"><h1>WDD 131: Dynamic Web Fundamentals - <span>Stephen David</span></h1></div>
+        
         <nav>
             <ul>
-                <li>Linkedin</li>
-                <li>Canvas</li>
-                <li>Scripture</li>
-                <li>Final Project</li>
+                <li><a href=""  target="_blank">Linkedin</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"  target="_blank">Scripture</a></li>
+                <li><a href=""  target="_blank">Final Project</a></li>
             </ul>
         </nav>
-    </header>
-
-    <div>
-     <section>
-     <h2>About me</h2>
+    </div>
+    <div class="wrapper">
+    <main class="grid">
+     
+     <section class="card1">
      <div>
-            <div>
+        <div class="card1title"><h2>About Me</h2></div>  
+            <div class="content1">
             <p>
+                Hi there! I'm a passionate and creative Frontend Developer from West Africa with a keen eye for crafting engaging, user-friendly websites and applications. My journey in tech began with a curiosity for how websites come to life, and over the years, I've honed my skills in HTML, CSS, JavaScript, and modern frontend frameworks like React and Vue.js.
+
+                I love transforming complex ideas into seamless digital experiences, focusing on both functionality and aesthetics. Whether it's building responsive layouts, improving user interfaces, or optimizing performance, I strive to ensure every project is as intuitive and visually appealing as possible.
+                
+                Being part of the vibrant and growing tech community in West Africa has been a major inspiration for me. I thrive on collaborating with diverse teams and clients from around the world, exchanging knowledge, and solving real-world problems through code
 
             </p>
-            <img src="" alt="">
+            <img src="images/avater.png" alt="profile-pic">
             </div>
             <div>
-            <h2>
-              Toloria, Madagascar  
+            
+            <h2 class="sub-header">
+              Lagos, Nigeria  
             </h2>
-            <div>
-                <img src="" alt="">
-                <p></p>
+            <hr>
+            <div class="country">
+                <div>
+                    <img class="flag" src="images/Flag_of_Nigeria.png" alt="flag">
+                    <span>Official Flag of Nigeria</span>
+                </div>
+                
+                <p>Nigeria, located in West Africa, is the most populous country on the continent and the seventh-largest in the world, with over 200 million people. Known for its rich cultural diversity, Nigeria is home to more than 250 ethnic groups, including the Hausa, Yoruba, Igbo, and many others. The country boasts a vibrant history, a dynamic economy, and is a leader in sectors such as entertainment, particularly Nollywood (its film industry), and music</p>
             </div>
             </div>
         </div>
      </section>
-     <section>
-     <h2> Web Dev Resources</h2>
-     <ol>
-        <li>Dev.to Community</li>
-        <li>Smashing Magazine</li>
-        <li>CSS Tricks</li>
-        <li>W3 Schools</li>
-        <li>Udemy</li>
-        <li>Image Placeholder</li>
-     </ol>
+     
+     <section class="card2">
+
+        <div class="card2title"> <h2>Web Dev Resources</h2></div>
+     <div class="content2"><ol>
+        <li><a href="">Dev.to Community</a></li>
+        <li><a href="">Smashing Magazine</a></li>
+        <li><a href="">CSS Tricks</a></li>
+        <li><a href="">W3 Schools</a></li>
+        <li><a href="">Udemy</a></li>
+        <li><a href="">Image Placeholder</a></li>
+     </ol></div>
+     
      </section>
 
-    </div>
+    </main>
+   </div>
 
     <footer> 
-        <p>2025 Stephen David</p>
-        <p>Last Modification</p>
+        <p><span id="currentyear"></span> &copy;  🌺Stephen David🌺 Nigeria</p>
+        <p id="lastModified">Last Modification: </p>
     </footer>
-    
+    <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        
+        // Display the current year in the element with ID "current-year"
+        document.getElementById('currentyear').textContent = currentYear;
+
+        const lastModified= document.lastModified;
+        document.getElementById('lastModified').textContent = `Last Modification: ${lastModified}`
+    </script>
 </body>
-</html>
+</html> 

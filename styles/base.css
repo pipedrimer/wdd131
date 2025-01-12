@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Jersey+15&family=Montserrat:ital,wght@0,200;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    font-family: "montserrat";
+    letter-spacing: 0.05em;
+
+    
+
+}
+
+.header{
+    display: block;
+    font-family: "funnel display";
+
+    
+   
+}
+.header span{
+    color: yellow;
+}
+
+.title{
+    display: block;
+    width: 100%;
+    background-color: rgb(6, 68, 98);
+    color: white;
+}
+
+.header h1{
+    justify-self: center;
+    padding: 15px 5px;
+}
+nav{
+    background-color: black ;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+
+nav a{
+    color: whitesmoke;
+    text-decoration: none;
+    
+}
+nav a:hover{
+
+  color:yellow;
+}
+
+.grid{
+   display: grid;
+   grid-template: auto 1fr / 0.5fr auto auto 0.5fr ;
+   justify-items: center;
+   grid-column-gap: 2rem;
+   border: 2px solid black;
+   float: none;
+
+   
+   
+   
+
+}
+
+.card1{
+
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 10px 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 700px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    
+    
+    
+    
+    
+   
+}
+
+.card2{
+ grid-column: 3/4;
+ grid-row: 2/3;
+ margin: 10px 10px;
+ border: 2px solid black;
+ border-radius: 20px;
+ overflow: hidden;
+ box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    
+ 
+}
+
+.card2 ol{
+    list-style:disc;
+}
+
+.card2title{
+    grid-column:3/4;
+    border: 2px solid black;
+    background-color: rgb(6, 68, 98);
+    color: whitesmoke;
+    padding: 2px 40px;
+   
+
+}
+.card1title{
+    grid-column: 2/3;
+    border: 2px solid black;
+    background-color: rgb(6, 68, 98);
+    color: whitesmoke;
+    
+    
+}
+
+.card1title h2{
+ justify-self: center;
+ font-family: "jersey 15";
+ font-size: xx-large;
+}
+
+.card2title h2{
+justify-self: center;
+ font-family: "jersey 15";
+ font-size: xx-large;
+}
+
+
+.content1{
+    padding: 30px 30px;
+    display: inline-flex;
+
+    
+}
+
+.content2{
+    justify-self: center;
+    margin-top: 100px;
+    line-height: 1.8rem;
+    margin-bottom: 100px;
+}
+
+.content1 img{
+    max-height: 150px;
+
+}
+.content2 a{
+    font-family: "funnel display";
+}
+.content2 a:hover{
+   color: blue;
+
+}
+
+.content2 a:active{
+    color: black;
+}
+.flag{
+    width: 150px;
+    margin-right: 10px;
+    margin-top: 2rem;
+}
+
+.sub-header{
+    justify-self: center;
+    margin-bottom: 20px;
+    font-family: "jersey 15";
+    font-size: xx-large;
+}
+.country{
+    display: inline-flex;
+    padding: 20px 20px;
+    
+}
+
+.country span{
+    font-size: small;
+    font-style: italic;
+    font-family: montserrat;
+    
+}
+.wrapper{
+    padding-bottom: 100px;
+}
+footer{
+    background-color:  rgb(6, 68, 98);
+    color: whitesmoke;
+    justify-items: center;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    font-family: "funnel display";
+
+    padding-top: 10px;
+
+    
+}
+
+@media screen {
+    
+}
