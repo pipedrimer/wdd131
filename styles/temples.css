@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4A148C;
+    color: white;
+    padding: 1em 2em;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/* Navigation menu */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a.active {
+    color: gold;
+}
+
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Golden color on hover */
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 1em;
+        background-color: #4A148C;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        right: 0;
+        width: 200px;
+        padding: 1em;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+main {
+    padding: 1em;
+    text-align: center;
+    
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1em;
+    margin-top: 1em;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #4A148C;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}

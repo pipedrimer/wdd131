@@ -1,0 +1,19 @@
+header {
+    text-align: left;
+    padding: 1em 2em;
+}
+
+nav ul {
+    justify-content: flex-end;
+}
+
+main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
