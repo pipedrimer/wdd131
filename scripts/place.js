@@ -6,8 +6,8 @@ function calculateWindChill(temp, windSpeed) {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    const temperature = 10; // Static value for now
-    const windSpeed = 5;    // Static value for now
+    const temperature = 10; 
+    const windSpeed = 5;    
 
     document.getElementById("windChill").textContent = calculateWindChill(temperature, windSpeed);
 });
