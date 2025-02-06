@@ -1,0 +1,114 @@
+/* Global Styles */
+:root {
+    --primary-color: #c8102e;
+    --secondary-color: #007a33;
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Hero Image */
+picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Sections */
+section {
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+@media (max-width: 768px) {
+    h2 {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 0.5rem 0;
+}
+
+.weather-icon {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .weather-icon {
+        display: none;
+    }
+    .weather h2::after {
+        content: url('/images/weather.svg');
+        display: block;
+        margin: 0.5rem auto;
+        max-width: 150px;
+    }
+}
+@media (min-width: 768px) {
+    main {
+        position: relative;
+    }
+
+    .data, .weather {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.6);
+        padding: 5px;
+        border-radius: 8px;
+    }
+
+    .data {
+        top: 10%;
+        left: 5%;
+        max-width: 300px;
+    }
+
+    .weather {
+        bottom: 30%;
+        right: 5%;
+        max-width: 250px;
+    }
+}
